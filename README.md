@@ -1,3 +1,15 @@
+# About Project
+
+This is just a thing I had to do as homework. I had to make a web application, that connects to a MySQL server, and enables you to create a database called `genealogie[Name]` (genealogy) with a table called `rude[Name]` (relatives) with a specific set of columns. The app is supposed to let you insert entries, and must display a certain set of queries executed on that table.
+
+What I did special about this is go over-the-top and write the visual part in React (the back-end is PHP because it was in the project requirements), just to have an excuse to write something in React. It was fun!
+
+## Specifications
+
+The PHP is located in the php/ folder. Place its contents into the root of an Apache htdocs folder. Change the credentials in `pdo.php` to suit your MySQL installation. Make sure to change the URLs in the React .js files to direct to the URL of your Apache htdocs folder (I really don't know how to explain this), you're looking only for calls of the `fetchPost` function. Now you can run the React app (see below) and test the project (if i haven't overseen anything).
+
+This thing is really not that interesting but thanks for checking in!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
