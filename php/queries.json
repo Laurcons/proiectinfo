@@ -1,0 +1,18 @@
+[
+    {
+        "description": "Toate rudele",
+        "condition": "1"
+    }, {
+        "description": "Toate rudele care au vârsta sub 30 de ani și trăiesc",
+        "condition": "varsta < 30 AND varsta > -1"
+    }, {
+        "description": "Toate rudele care au vârsta de peste 45 ani",
+        "condition": "varsta > 45"
+    }, {
+        "description": "Toți frații și surorile",
+        "condition": "grad='frate' OR grad='sora'"
+    }, {
+        "description": "Toate rudele în viață cu 'a' sau 'e' în nume",
+        "condition": "varsta > -1 AND (nume LIKE '%a%' OR nume LIKE '%e%' OR prenume LIKE '%a%' OR prenume LIKE '%e%')"
+    }
+]
