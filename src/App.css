@@ -1,0 +1,65 @@
+
+html, body, #root {
+    height: 100%;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+.left-panel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 25%;
+    padding: 15px 16px;
+}
+.right-panel {
+    position: fixed !important;
+    top: 0;
+    bottom: 0;
+    left: 75%;
+    width: 25%;
+    padding: 15px 16px;
+}
+
+.grayable {
+    position: relative;
+}
+.grayable::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+.grayed::after {
+    opacity: 0.75;
+}
+
+@keyframes bmaspin {
+    to {
+        transform: rotateY(0deg);
+    }
+    from {
+        transform: rotateY(90deg);
+    }
+}
+.bmaspin-wrapper {
+    position: relative;
+}
+.bmaspin-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bmaspin {
+    animation: bmaspin 3s alternate infinite linear;
+}
