@@ -88,6 +88,7 @@ class App extends React.Component {
               <div className="card-footer">
                 Pricop Laurențiu &copy; 2020
                 <div className="float-right">
+                  <a href="https://github.com/Laurcons/proiectinfo"><img src={icons.github} height="25px" alt="GitHub Logo" className="mr-2" /></a>
                   <a href="https://getbootstrap.com"><img src={icons.bootstrap} height="25px" alt="Bootstrap Logo" /></a>
                   <a href="https://reactjs.org"><img src={icons.react} height="25px" alt="React Logo"/></a>
                   <a href="https://php.net"><img src={icons.php} height="25px" alt="PHP Logo" /></a>
